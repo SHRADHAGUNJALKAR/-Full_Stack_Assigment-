@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title> Grid-Assignment 3. </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "article nav ads"
+          "footer Nav Ads";
+        grid-template-rows: 60px 1fr 60px;
+        grid-template-columns: 20% 40% 30%;
+        height: 100vh;
+        width:100vw;
+        grid-gap: 5px;
+        text-align: left;
+        /* overflow: hidden; */
+      }
+
+      header,nav,footer,article,aside
+      {
+        background-color: yellow;
+      }
+
+      #pageHeader {
+        grid-area: header ;
+      }
+
+      #pageNav {
+        grid-area: nav;
+      }
+
+      #pageArticle {
+        grid-area: article;
+      }
+
+      #pageAds {
+        grid-area: aside;
+      }
+
+      #pageFooter {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="pageHeader">Header</header>
+    <nav id="pageNav">Nav</nav>
+    <article id="pageArticle">Article</article>
+    <aside id="">Ads</aside>
+    <footer id="pageFooter">Footer</footer>
+  </body>
+</html>

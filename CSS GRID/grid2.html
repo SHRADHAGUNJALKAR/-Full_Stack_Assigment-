@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Assignment=2</title>
+
+
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+       body
+        {
+            display: grid;
+            grid-template-areas: 
+            "Header Header Header"
+            "Article Nav Ads"
+            "Footer Footer Footer";
+            grid-template-rows: 16vh 70vh 16vh;
+            grid-template-columns: 60% 30% 20%;
+            height: 10vh;
+            grid-gap: 10px;
+            text-align: left;
+            overflow: hidden;
+    }
+    header,nav,footer,article,aside
+
+    { 
+background-color: yellow;
+
+    }
+    #pageHeader {
+        grid-area: Header ;
+      }
+
+      #pageNav {
+        grid-area: Nav;
+      }
+
+      #pageArticle {
+        grid-area: Article;
+      }
+
+      #pageAds {
+        grid-area: Ads;
+      }
+
+      #pageFooter {
+        grid-area: Footer;
+      }
+    </style>
+    </head>
+    <body>
+        <header id="pageHeader">Header</header>
+    <nav id="pageNav">Nav</nav>
+    <article id="pageArticle">Article</article>
+    <aside id="pageAds">Ads</aside>
+    <footer id="pageFooter">Footer</footer>
+        
+    </body>
+</html>
